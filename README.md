@@ -1,2 +1,2 @@
 # learning 
-# Genrated QR Code By API
+# Generated QR Code By API
