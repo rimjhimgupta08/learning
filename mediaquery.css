@@ -1,0 +1,52 @@
+@media screen and (max-width:960px) {
+      main .center{
+            width: 42%;
+            height: 300px;
+            left: 30%;
+            top: 150px;
+      }
+      main  .center h2{
+            font-size: 1rem;
+            margin-top: 5px;
+      }
+      main input{
+            height: 40px;
+            margin-top: 10px;
+            width: 160px;
+      }
+      #btn{
+            margin-top: 10px;
+            width: 220px;
+      }
+}
+      @media  screen and (max-width:700px) {
+            main .center{
+                  width: 50%;
+                  height: 300px;
+                  left: 30%;
+                  top: 120px;
+            }
+      main  .center input{
+            width: 200px;
+      }
+      #btn{
+            width: 200px;
+      }
+}
+@media screen and (max-width:500px) {
+      main .center{
+            width: 70%;
+            height: 300px;
+            left: 15%;
+            top: 120px;
+      }
+      main .center h2{
+            font-size: 1.1rem;
+      }
+      main .center input{
+            width: 180px;
+      }
+      #btn{
+            width: 150px;
+      }
+}

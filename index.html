@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Learnign in Web Development</title>
+      <title>QR Code Generate</title>
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="mediaquery.css">
 </head>
+
 <body>
-      <h1>Learning</h1>
+      <main>
+            <div class="center">
+                  <h2> Enter Your Text or URL</h2>
+                  <input type="text" placeholder="Enter the name" id="qrText"><br>
+                  <div id="imgBox">
+                        <img src="" id="qrImage">
+                  </div>
+                  <button onclick="generateQR()" id="btn">Generate QR Code</button>
+            </div>
+      </main>
+      <script>
+
+            let imgBox = document.getElementById('imgBox');
+            let qrImage = document.getElementById('qrImage');
+            let qrText = document.getElementById('qrText');
+
+
+            function generateQR() {
+                  qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value;
+
+            }
+      </script>
 </body>
+
 </html>
